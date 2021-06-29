@@ -31,7 +31,7 @@
     "singleQuote": true,
     "trailingComma": "es5"
   },
-  "name": "sdk-did-method-stacks",
+  "name": "@jolocom/sdk-did-method-stacks",
   "author": "Jolocom Dev <dev@jolocom.com>",
   "module": "dist/sdk-did-method-stacks.esm.js",
   "size-limit": [
