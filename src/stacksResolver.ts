@@ -1,6 +1,6 @@
 import { IResolver } from 'jolocom-lib/js/didMethods/types'
 import { Identity } from 'jolocom-lib/js/identity/identity'
-import { getResolver } from '@jolocom/stacks-did-resolver'
+import { getResolver } from '@jolocom/stacks-did-resolver/js/resolver'
 import { DidDocument } from 'jolocom-lib/js/identity/didDocument/didDocument'
 import { ErrorCodes } from 'jolocom-lib/js/errors'
 import { PREFIX } from './constant'
