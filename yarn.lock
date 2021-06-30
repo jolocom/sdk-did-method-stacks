@@ -1563,9 +1563,9 @@
     form-data "^3.0.0"
     ramda "^0.26.1"
 
-"@jolocom/stacks-did-resolver@jolocom/stacks-did-resolver#jolocom-stacks-did-resolver-v0.1.1-gitpkg":
-  version "0.1.1"
-  resolved "https://codeload.github.com/jolocom/stacks-did-resolver/tar.gz/fc7a4e12e50e209dd983048e674f48566b60e925"
+"@jolocom/stacks-did-resolver@jolocom/stacks-did-resolver#jolocom-stacks-did-resolver-v0.1.2-gitpkg":
+  version "0.1.2"
+  resolved "https://codeload.github.com/jolocom/stacks-did-resolver/tar.gz/8a083bb276ce7c53a42d84e342725ca038cae9a0"
   dependencies:
     "@stacks/bns" "^2.0.0-beta.1"
     "@stacks/network" "2.0.0-beta.0"
