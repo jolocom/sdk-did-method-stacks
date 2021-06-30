@@ -1,6 +1,15 @@
-export const sum = (a: number, b: number) => {
-  if ('development' === process.env.NODE_ENV) {
-    console.log('boop');
+import { JolocomPlugin, JolocomSDK } from '@jolocom/sdk'
+import { PREFIX } from './constant'
+import { StacksDidMethodFactory } from './stacksDidMethodFactory'
+
+export class JolocomStacksDidMethodPlugin implements JolocomPlugin {
+  private _didMethodFactory: StacksDidMethodFactory
+
+  constructor() {
+    this._didMethodFactory = new StacksDidMethodFactory()
   }
-  return a + b;
-};
+
+  async register(sdk: JolocomSDK) {
+    await sdk.didMethods.register(PREFIX, this._didMethodFactory.create())
+  }
+}
