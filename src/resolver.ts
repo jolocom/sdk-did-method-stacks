@@ -15,7 +15,8 @@ export class StacksResolver implements IResolver {
   prefix = PREFIX
 
   constructor(stacksNetwork?: StacksNetwork) {
-    this.resolveImplementation = (did: string) => getResolver(stacksNetwork)(did)
+    this.resolveImplementation = (did: string) =>
+      getResolver(stacksNetwork)(did)
   }
 
   async resolve(did: string): Promise<Identity> {

@@ -1,7 +1,7 @@
 import { JolocomPlugin, JolocomSDK } from '@jolocom/sdk'
 import { PREFIX } from './constant'
 import { StacksDidMethod } from './didMethod'
-import { StacksNetwork } from "@stacks/network"
+import { StacksNetwork } from '@stacks/network'
 
 export class JolocomStacksDidMethodPlugin implements JolocomPlugin {
   private readonly stacksNetwork?: StacksNetwork
@@ -11,6 +11,9 @@ export class JolocomStacksDidMethodPlugin implements JolocomPlugin {
   }
 
   async register(sdk: JolocomSDK) {
-    await sdk.didMethods.register(PREFIX, new StacksDidMethod(this.stacksNetwork))
+    await sdk.didMethods.register(
+      PREFIX,
+      new StacksDidMethod(this.stacksNetwork),
+    )
   }
 }
