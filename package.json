@@ -39,11 +39,11 @@
   "size-limit": [
     {
       "path": "dist/sdk-did-method-stacks.cjs.production.min.js",
-      "limit": "10 KB"
+      "limit": "1024 KB"
     },
     {
       "path": "dist/sdk-did-method-stacks.esm.js",
-      "limit": "10 KB"
+      "limit": "1024 KB"
     }
   ],
   "devDependencies": {
