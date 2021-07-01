@@ -1,4 +1,4 @@
-# Jolocom SDK did:stacks:v2 integration
+# Jolocom SDK did:stack:v2 integration
 
 This repository contains a plugin for the [Jolocom SDK](https://github.com/jolocom/jolocom-sdk) which integrates the [Stacks DID Resolver](https://github.com/jolocom/stacks-did-resolver) as a DID method.
 
