@@ -3,6 +3,9 @@ import { PREFIX } from './constant'
 import { StacksDidMethod } from './didMethod'
 import { StacksNetwork } from '@stacks/network'
 
+export { PREFIX } from './constant'
+export { StacksMainnet, StacksTestnet, StacksMocknet } from '@stacks/network'
+
 export class JolocomStacksDidMethodPlugin implements JolocomPlugin {
   private readonly stacksNetwork?: StacksNetwork
   private readonly prefix: string
