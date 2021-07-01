@@ -9,12 +9,13 @@ import { StacksResolver } from './resolver'
 import { StacksRegistrar } from './registrar'
 
 export class StacksDidMethod implements IDidMethod {
-  prefix = PREFIX
+  prefix: string
   resolver: IResolver
   registrar: IRegistrar
 
-  constructor(stacksNetwork?: StacksNetwork) {
-    this.resolver = new StacksResolver(stacksNetwork)
+  constructor(stacksNetwork?: StacksNetwork, prefix = PREFIX) {
+    this.prefix = prefix
+    this.resolver = new StacksResolver(stacksNetwork, prefix)
     this.registrar = new StacksRegistrar()
   }
 }

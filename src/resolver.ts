@@ -10,17 +10,16 @@ import { DIDDocument } from 'did-resolver'
 type Resolve = (did: string) => Promise<DIDDocument>
 
 export class StacksResolver implements IResolver {
-  private resolveImplementation: Resolve
+  private readonly resolver: Resolve
+  prefix: string
 
-  prefix = PREFIX
-
-  constructor(stacksNetwork?: StacksNetwork) {
-    this.resolveImplementation = (did: string) =>
-      getResolver(stacksNetwork)(did)
+  constructor(stacksNetwork?: StacksNetwork, prefix = PREFIX) {
+    this.resolver = getResolver(stacksNetwork)
+    this.prefix = prefix
   }
 
   async resolve(did: string): Promise<Identity> {
-    const jsonDidDoc = await this.resolveImplementation(did).catch(() => {
+    const jsonDidDoc = await this.resolver(did).catch(() => {
       throw new Error(ErrorCodes.RegistryDIDNotAnchored)
     })
 
