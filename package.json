@@ -14,7 +14,7 @@
     "start": "tsdx watch",
     "build": "tsdx build",
     "test": "tsdx test",
-    "lint": "tsdx lint",
+    "lint": "tsdx lint src",
     "prepare": "tsdx build",
     "size": "size-limit",
     "analyze": "size-limit --why"
@@ -26,10 +26,12 @@
     }
   },
   "prettier": {
-    "printWidth": 80,
-    "semi": true,
+    "endOfLine": "lf",
+    "semi": false,
     "singleQuote": true,
-    "trailingComma": "es5"
+    "tabWidth": 2,
+    "trailingComma": "all",
+    "printWidth": 80
   },
   "name": "@jolocom/sdk-did-method-stacks",
   "author": "Jolocom Dev <dev@jolocom.com>",
@@ -37,11 +39,11 @@
   "size-limit": [
     {
       "path": "dist/sdk-did-method-stacks.cjs.production.min.js",
-      "limit": "10 KB"
+      "limit": "1024 KB"
     },
     {
       "path": "dist/sdk-did-method-stacks.esm.js",
-      "limit": "10 KB"
+      "limit": "1024 KB"
     }
   ],
   "devDependencies": {
@@ -55,7 +57,7 @@
     "typescript": "^4.3.4"
   },
   "dependencies": {
-    "@jolocom/stacks-did-resolver": "jolocom/stacks-did-resolver#jolocom-stacks-did-resolver-v0.1.1-gitpkg",
+    "@jolocom/stacks-did-resolver": "jolocom/stacks-did-resolver#jolocom-stacks-did-resolver-v0.1.2-gitpkg",
     "did-resolver": "^3"
   }
 }
