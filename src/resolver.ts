@@ -19,7 +19,11 @@ export class StacksResolver implements IResolver {
   }
 
   async resolve(did: string): Promise<Identity> {
-    const jsonDidDoc = await this.resolver(did).catch(() => {
+    const jsonDidDoc = await this.resolver(did).catch(err => {
+      console.error('DID Method Stacks', err)
+
+      // FIXME TODO better error handling, as some times this error is just a
+      // network issue or some other minor stuff
       throw new Error(ErrorCodes.RegistryDIDNotAnchored)
     })
 
