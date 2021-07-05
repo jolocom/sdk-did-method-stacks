@@ -1554,18 +1554,18 @@
   dependencies:
     ethers "5.0.5"
 
-"@jolocom/sdk@^1.3.0-rc4":
-  version "1.3.0-rc4"
-  resolved "https://registry.yarnpkg.com/@jolocom/sdk/-/sdk-1.3.0-rc4.tgz#ef084d3de6952a62438df1ade68f717445becd71"
-  integrity sha512-F5tfs7e79TBiJPDW9fSVjy63gUsrXWxaoC7shduO4vkn179y2/8jQ8j7cjmMhE7FIsX7hUDOPby80nAuz8BH2A==
+"@jolocom/sdk@^1.3.1":
+  version "1.3.1"
+  resolved "https://registry.yarnpkg.com/@jolocom/sdk/-/sdk-1.3.1.tgz#418a8f264782361cf29611e010169347bad03f24"
+  integrity sha512-mQRu0QWQ79XCoilBMB4MV21iCp9yrDz3Slswsg5va0jgCvIz6zik0KluEJvdho4JYDnFuisJmsz2wVtWtjSL+g==
   dependencies:
     "@jolocom/protocol-ts" "^0.5.4"
     form-data "^3.0.0"
     ramda "^0.26.1"
 
-"@jolocom/stacks-did-resolver@jolocom/stacks-did-resolver#jolocom-stacks-did-resolver-v0.1.2-gitpkg":
-  version "0.1.2"
-  resolved "https://codeload.github.com/jolocom/stacks-did-resolver/tar.gz/8a083bb276ce7c53a42d84e342725ca038cae9a0"
+"@jolocom/stacks-did-resolver@jolocom/stacks-did-resolver#jolocom-stacks-did-resolver-v0.1.3-gitpkg":
+  version "0.1.3"
+  resolved "https://codeload.github.com/jolocom/stacks-did-resolver/tar.gz/acb0843657e2e14be2e43b7a73b3b1b8bcac7729"
   dependencies:
     "@stacks/bns" "^2.0.0-beta.1"
     "@stacks/network" "2.0.0-beta.0"
@@ -5969,10 +5969,10 @@ jest@^25.3.0:
     import-local "^3.0.2"
     jest-cli "^25.5.4"
 
-jolocom-lib@^5:
-  version "5.2.0"
-  resolved "https://registry.yarnpkg.com/jolocom-lib/-/jolocom-lib-5.2.0.tgz#8ac056ad5ff6b0069b99e3957f5da03db28ed266"
-  integrity sha512-gYBWt5sKjoF33FlKV8G6p09WAojFM4ExBFmeye7+eCvdf+ebBSgSRdxiuZ+lsMf3dZhTE3Nc23fTUkvnAxvzCg==
+jolocom-lib@^5.2.1:
+  version "5.2.1"
+  resolved "https://registry.yarnpkg.com/jolocom-lib/-/jolocom-lib-5.2.1.tgz#162ec4fd4597e1ec3539dade519bd82c57ed7864"
+  integrity sha512-2Bb1yDp5gtnRuVvsQVUscxyIBtYesch73if6jucAyqVl4CJXQYYZsGOvJDYHzzfX+h62b3pt0XknfsMih5DyWQ==
   dependencies:
     "@hawkingnetwork/ed25519-hd-key-rn" "^1.0.1"
     "@jolocom/jolo-did-registrar" "^1.0.0"
